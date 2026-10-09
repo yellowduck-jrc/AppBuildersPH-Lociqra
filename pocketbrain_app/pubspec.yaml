@@ -1,0 +1,35 @@
+
+name: pocketbrain_app
+description: "PocketBrain AI document assistant with Lociqra UI."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # PocketBrain backend integration
+  http: ^1.6.0
+  file_picker: 8.3.7
+  flutter_markdown_plus: ^1.0.12
+  url_launcher: ^6.3.3
+
+  # Lociqra local preferences
+  shared_preferences: ^2.5.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - "logo/lociqra logo.png"

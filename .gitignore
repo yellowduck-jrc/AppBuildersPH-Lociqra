@@ -1,0 +1,200 @@
+
+# ============================================
+# LOCIQRA - GITIGNORE
+# Flutter + FastAPI + Ollama + Local RAG
+# ============================================
+
+
+# ============================================
+# 1. PYTHON / FASTAPI
+# ============================================
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+.venv/
+venv/
+env/
+ENV/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+*.egg-info/
+dist/
+
+
+# ============================================
+# 2. FLUTTER / DART
+# ============================================
+
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+
+build/
+coverage/
+
+*.iml
+
+# Flutter generated files
+**/flutter/ephemeral/
+**/Flutter/ephemeral/
+
+# Local Android configuration
+**/android/local.properties
+**/android/key.properties
+
+# Local iOS configuration
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+
+
+# ============================================
+# 3. PRIVATE DATA AND UPLOADED DOCUMENTS
+# ============================================
+
+data/documents/
+data/embedding_cache/
+data/chroma/
+data/chroma_db/
+data/vector_store/
+data/vector_db/
+
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# Legacy test document
+data/sample.pdf
+
+# Other database files
+*.sqlite
+*.sqlite3
+
+
+# ============================================
+# 4. AI MODELS AND LOCAL CACHE
+# ============================================
+
+*.gguf
+*.safetensors
+*.onnx
+*.pt
+*.pth
+
+# Hugging Face / model cache
+.cache/
+huggingface/
+models--*/
+
+# Local model weights
+*.ckpt
+
+
+# ============================================
+# 5. ENVIRONMENT VARIABLES AND SECRETS
+# ============================================
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.p12
+*.pfx
+
+service-account*.json
+firebase-adminsdk*.json
+
+
+# ============================================
+# 6. OLD LOCIQRA DEVELOPMENT BACKUPS
+# ============================================
+
+main_step*_backup.py
+main_step*_backup.dart
+
+*.bak
+*.backup
+
+
+# ============================================
+# 7. IDE / EDITOR SETTINGS
+# ============================================
+
+.vscode/
+.idea/
+
+*.swp
+*.swo
+
+# ============================================
+# 8. WINDOWS SYSTEM FILES
+# ============================================
+
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+
+$RECYCLE.BIN/
+*.lnk
+
+
+# ============================================
+# 9. LOGS AND TEMPORARY FILES
+# ============================================
+
+*.log
+*.tmp
+*.temp
+
+logs/
+temp/
+tmp/
+
+
+# ============================================
+# 10. GENERATED EXECUTABLES
+# ============================================
+
+*.exe
+*.dll
+*.pdb
+
+# Windows Flutter release files are also
+# excluded by the build/ rule above.
+
+
+# ============================================
+# 11. FILES TO KEEP IN GITHUB
+# ============================================
+
+# These are NOT ignored:
+#
+# backend/main.py
+# backend/requirements.txt
+# pocketbrain_app/lib/
+# pocketbrain_app/logo/
+# pocketbrain_app/pubspec.yaml
+# pocketbrain_app/pubspec.lock
+# pocketbrain_app/windows/
+# Start_Lociqra.bat
+# Build_And_Start_Lociqra.bat
+# README.md
+# .gitignore
+#
+# ============================================
+
+# Local backend migration markers
+data/.legacy_pdf_import_checked
+data/.legacy_pdf_imported
